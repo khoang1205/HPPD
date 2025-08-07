@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <script src="https://www.youtube.com/iframe_api"></script>
+   
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HPPD</title>
@@ -70,7 +70,7 @@
 </head>
 <body class="min-h-screen gradient-bg transition-all duration-300 overflow-hidden">
 <!-- YouTube Player Ẩn -->
-<div id="player"></div>
+
 
   <!-- Canvas -->
   <canvas id="canvas-vy" class="fixed top-0 left-0 w-full h-full z-[20] hidden"></canvas>
@@ -222,23 +222,8 @@ function moveNoHelloButton() {
   let player;
 
   // Gọi tự động khi API đã sẵn sàng
-  function onYouTubeIframeAPIReady() {
-   player = new YT.Player('player', {
-  height: '0',
-  width: '0',
-  videoId: 'h53q6iIORhw',
-  playerVars: {
-    autoplay: 0,
-    controls: 0,
-    loop: 0, // không dùng loop gốc
-    playlist: 'h53q6iIORhw'
-  },
-  events: {
-    onReady: onPlayerReady
-  }
-});
-
-  }
+  
+  
 
   function onPlayerReady(event) {
   const player = event.target;
